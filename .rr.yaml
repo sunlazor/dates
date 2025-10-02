@@ -1,0 +1,10 @@
+version: '3'
+
+server:
+  command: "php psr-worker.php"
+
+http:
+  address: 0.0.0.0:9001
+  access_logs: true
+  pool:
+    debug: true
