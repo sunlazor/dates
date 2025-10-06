@@ -4,7 +4,9 @@
     "require": {
         "spiral/roadrunner-http": "3.6",
         "nyholm/psr7": "^1.8",
-        "spiral/roadrunner-cli": "^2.7"
+        "spiral/roadrunner-cli": "^2.7",
+        "symfony/flex": "^2.8",
+        "baldinof/roadrunner-bundle": "^3.2"
     },
     "autoload": {
         "psr-4": {
@@ -16,5 +18,10 @@
             "name": "sunlazor"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true
+        }
+    }
 }
